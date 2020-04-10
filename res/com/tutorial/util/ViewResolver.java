@@ -18,7 +18,7 @@ public class ViewResolver {
 			url = request.getContextPath() + url.replace("redirect:", "");
 			response.sendRedirect(url);
 		}else {
-			String prefix = "/WEB-INF/views/";
+			String prefix = "/WEB-INF/jsp/";
 			String subfix = ".jsp";
 			url = prefix+url+subfix;
 			request.getRequestDispatcher(url).forward(request, response);
